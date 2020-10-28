@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mediator14
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mediator14
+  template:
+    metadata:
+      labels:
+        app: mediator14
+    spec:
+      containers:
+        - image: marafiievychmariia/mediator14
+          name: mediator14
+          ports:
+            - containerPort: 8081
+              name: mediator14
