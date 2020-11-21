@@ -15,7 +15,7 @@ import java.util.*;
 @RequestMapping("suppliers")
 public class SupplierController {
 
-    private static final String SUPPLIER_URL = "http://10.105.171.185:8082";
+    private static final String SUPPLIER_URL = "http://supplier-service-new:8082";
     private static final RestTemplate restTemplate = new RestTemplate();
     private static final HttpHeaders headers = new HttpHeaders();
     private static final HttpEntity<Object> headersEntity = new HttpEntity<>(headers);
@@ -44,10 +44,10 @@ public class SupplierController {
 
     @PostMapping
     public ResponseEntity<Void> ItemsFromSeller(@RequestBody String deliverJson) {
-        HttpEntity<String> things = new HttpEntity<>(deliverJson);
+        HttpEntity<String>  serveJson = new HttpEntity<>(deliverJson);
         ResponseEntity<Void> response = restTemplate
                 .exchange(SUPPLIER_URL + "/suppliers",
-                        HttpMethod.POST, things, Void.class);
+                        HttpMethod.POST, serveJson, Void.class);
 
         if (response.getStatusCodeValue() == 200)
             return ResponseEntity.ok().build();

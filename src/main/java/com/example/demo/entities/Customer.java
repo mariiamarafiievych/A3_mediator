@@ -1,6 +1,5 @@
 package com.example.demo.entities;
 
-import javax.persistence.*;
 import java.util.UUID;
 
 public class Customer {
