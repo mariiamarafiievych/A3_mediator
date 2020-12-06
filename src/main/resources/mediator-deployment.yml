@@ -18,3 +18,6 @@ spec:
           name: mediator-new
           ports:
             - containerPort: 8081
+                name: rest
+            - containerPort: 9091
+                 name: grpc

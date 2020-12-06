@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo.controllers.rest;
 
 import com.example.demo.entities.Customer;
 import com.example.demo.entities.Order;
@@ -20,7 +20,8 @@ import java.util.UUID;
 @RestController
 @RequestMapping("orders")
 public class OrderController {
-
+    //order-service-new
+    //customer-service-new
     private static final String ORDER_URL = "http://order-service-new:8084";
     private static final String CUSTOMERS_URL = "http://customer-service-new:8083";
     private static final RestTemplate restTemplate = new RestTemplate();

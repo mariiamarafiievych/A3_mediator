@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo.controllers.rest;
 
 import com.example.demo.entities.Item;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +17,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("items")
 public class ItemController {
+    //supplier-service-new
     private static final String ITEM_URL = "http://supplier-service-new:8082";
     private static final RestTemplate restTemplate = new RestTemplate();
     private static final HttpHeaders headers = new HttpHeaders();

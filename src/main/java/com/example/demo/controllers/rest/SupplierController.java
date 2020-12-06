@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo.controllers.rest;
 
 import com.example.demo.entities.Supplier;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.*;
 @RestController
 @RequestMapping("suppliers")
 public class SupplierController {
-
+   //supplier-service-new
     private static final String SUPPLIER_URL = "http://supplier-service-new:8082";
     private static final RestTemplate restTemplate = new RestTemplate();
     private static final HttpHeaders headers = new HttpHeaders();

@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo.controllers.rest;
 
 import com.example.demo.entities.Customer;
 import com.example.demo.entities.dto.CustomersDTO;
@@ -18,7 +18,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("customers")
 public class CustomerController {
-
+//customer-service-new
     private static final String CUSTOMERS_URL = "http://customer-service-new:8083";
     private final RestTemplate restTemplate = new RestTemplate();
     private final HttpHeaders headers = new HttpHeaders();
