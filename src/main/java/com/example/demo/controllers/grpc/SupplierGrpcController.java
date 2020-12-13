@@ -28,7 +28,7 @@ public class SupplierGrpcController extends supplierServiceGrpc.supplierServiceI
                 .usePlaintext()
                 .build();
         supplierServiceGrpc.supplierServiceBlockingStub stub = supplierServiceGrpc.newBlockingStub(channel);
-        GetResponseItem response = stub.getThings(request);
+        GetResponseItem response = stub.getItems(request);
         channel.shutdown();
         responseStreamObserver.onNext(response);
         responseStreamObserver.onCompleted();
