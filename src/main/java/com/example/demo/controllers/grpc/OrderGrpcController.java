@@ -8,7 +8,7 @@ import net.devh.boot.grpc.server.service.GrpcService;
 
 @GrpcService
 public class OrderGrpcController extends orderServiceGrpc.orderServiceImplBase{
-    String url = "order-service-new";
+    String url = "localhost";
 
     @Override
     public void getOrder(GetRequestOrder request, StreamObserver<GetResponseOrder> responseStreamObserver) {

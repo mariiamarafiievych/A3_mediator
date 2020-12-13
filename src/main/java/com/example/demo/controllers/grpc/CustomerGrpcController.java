@@ -1,6 +1,6 @@
 package com.example.demo.controllers.grpc;
 
-import com.example.grpcserver.*;
+import com.example.customer.*;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
@@ -8,7 +8,7 @@ import net.devh.boot.grpc.server.service.GrpcService;
 
 @GrpcService
 public class CustomerGrpcController extends customerServiceGrpc.customerServiceImplBase {
-    String url = "customer-service-new";
+    String url = "localhost";
     @Override
     public void get(GetRequest request, StreamObserver<GetResponse> responseStreamObserver) {
         ManagedChannel channel = ManagedChannelBuilder.forAddress(url, 9090)

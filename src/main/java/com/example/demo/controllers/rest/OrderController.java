@@ -22,8 +22,8 @@ import java.util.UUID;
 public class OrderController {
     //order-service-new
     //customer-service-new
-    private static final String ORDER_URL = "http://order-service-new:8084";
-    private static final String CUSTOMERS_URL = "http://customer-service-new:8083";
+    private static final String ORDER_URL = "http://localhost:8084";
+    private static final String CUSTOMERS_URL = "http://localhost:8083";
     private static final RestTemplate restTemplate = new RestTemplate();
     private static final HttpHeaders headers = new HttpHeaders();
     private static final HttpEntity<Object> headersEntity = new HttpEntity<>(headers);
