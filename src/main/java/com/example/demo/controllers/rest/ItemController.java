@@ -18,7 +18,7 @@ import java.util.UUID;
 @RequestMapping("items")
 public class ItemController {
     //supplier-service-new
-    private static final String ITEM_URL = "http://localhost:8082";
+    private static final String ITEM_URL = "http://supplier-service-new:8082";
     private static final RestTemplate restTemplate = new RestTemplate();
     private static final HttpHeaders headers = new HttpHeaders();
     private static final HttpEntity<Object> headersEntity = new HttpEntity<>(headers);

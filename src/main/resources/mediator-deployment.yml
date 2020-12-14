@@ -13,11 +13,11 @@ spec:
         app: mediator-new
     spec:
       containers:
-        - image: mariiamarafiievych/mediator-new
-          imagePullPolicy: IfNotPresent
+        -
+          image: mariiamarafiievych/mediator-new
           name: mediator-new
           ports:
             - containerPort: 8081
-                name: rest
+              name: rest
             - containerPort: 9091
-                 name: grpc
+              name: grpc

@@ -8,7 +8,7 @@ import net.devh.boot.grpc.server.service.GrpcService;
 
 @GrpcService
 public class SupplierGrpcController extends supplierServiceGrpc.supplierServiceImplBase {
-    String url = "localhost";
+    String url = "supplier-service-new";
 
     @Override
     public void getSuppliers(GetRequestSupplier request, StreamObserver<GetResponseSupplier> responseStreamObserver) {

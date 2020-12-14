@@ -15,7 +15,7 @@ import java.util.*;
 @RequestMapping("suppliers")
 public class SupplierController {
    //supplier-service-new
-    private static final String SUPPLIER_URL = "http://localhost:8082";
+    private static final String SUPPLIER_URL = "http://supplier-service-new:8082";
     private static final RestTemplate restTemplate = new RestTemplate();
     private static final HttpHeaders headers = new HttpHeaders();
     private static final HttpEntity<Object> headersEntity = new HttpEntity<>(headers);

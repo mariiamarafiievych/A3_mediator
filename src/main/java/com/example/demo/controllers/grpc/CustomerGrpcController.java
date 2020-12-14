@@ -8,7 +8,7 @@ import net.devh.boot.grpc.server.service.GrpcService;
 
 @GrpcService
 public class CustomerGrpcController extends customerServiceGrpc.customerServiceImplBase {
-    String url = "localhost";
+    String url = "customer-service-new";
     @Override
     public void get(GetRequest request, StreamObserver<GetResponse> responseStreamObserver) {
         ManagedChannel channel = ManagedChannelBuilder.forAddress(url, 9090)
